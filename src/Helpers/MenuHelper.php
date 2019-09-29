@@ -7,6 +7,8 @@
  */
 namespace Bkstar123\BksCMS\Utilities\Helpers;
 
+use Bkstar123\BksCMS\Utilities\Services\MenuLink;
+
 class MenuHelper
 {
     /**
@@ -39,5 +41,15 @@ class MenuHelper
         } else {
             return url()->current() == $url ? 'active' : '';
         }
+    }
+
+    public function renderMenu()
+    {
+        $menu = [];
+
+        foreach (config('menu') as $itemName => $item) {
+            array_push($menu, new MenuLink($itemName, $item['self'], $item['icon'], $item['children']));
+        }
+        //dd($menu);
     }
 }
