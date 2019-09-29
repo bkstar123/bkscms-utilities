@@ -12,7 +12,9 @@ namespace Bkstar123\BksCMS\Utilities\Providers;
 use Illuminate\Support\Facades\App;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
+use Bkstar123\BksCMS\Utilities\Helpers\MenuHelper;
 use Bkstar123\BksCMS\Utilities\Helpers\CrudViewHelper;
+use Bkstar123\BksCMS\Utilities\Facades\MenuHelper as MenuFacade;
 use Bkstar123\BksCMS\Utilities\Facades\CrudViewHelper as CrudViewFacade;
 
 class UtilitiesServiceProvider extends ServiceProvider
@@ -38,7 +40,12 @@ class UtilitiesServiceProvider extends ServiceProvider
             return new CrudViewHelper();
         });
 
+        App::singleton('menu', function ($app) {
+            return new MenuHelper();
+        });
+
         $loader = AliasLoader::getInstance();
         $loader->alias('CrudView', CrudViewFacade::class);
+        $loader->alias('Menu', MenuFacade::class);
     }
 }
