@@ -26,7 +26,9 @@ class UtilitiesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishes([
+            __DIR__.'/../config/bkstar123_bkscms_sidebarmenu.php' => config_path('bkstar123_bkscms_sidebarmenu.php'),
+        ], 'bkstar123_bkscms_sidebarmenu');
     }
 
     /**
