@@ -46,13 +46,11 @@ class MenuLink
         $this->name = $name;
         $this->path = $path;
         $this->icon = $icon;
-
         if (!empty($children)) {
             foreach ($children as $child) {
                 array_push(
                     $this->children,
                     new MenuLink(
- 
                         $child['name'],
                         $child['path'],
                         $child['icon'] ?? '',
