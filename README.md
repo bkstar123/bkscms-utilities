@@ -1,6 +1,9 @@
 # bkscms-utilities
 
-> Provides neccessary utilities for the bkscms project
+> Provides neccessary utilities for a **BKSCMS** project  
+
+For create a **BKSCMS** project, run the following command:  
+```composer create-project --prefer-dist bkstar123/bkscms <your-project>```  
 
 ## 1. Requirement
 It is recommended to install this package with PHP version 7.1.3+ and Laravel Framework version 5.6+
@@ -16,9 +19,6 @@ Then, publish the package's configuration file:
 Currently, this package provides two helpers which can be used in a **BKSCMS** project:  
 - MenuHelper  
 - CrudViewHelper  
-
-For create a **BKSCMS** project, run the following command:  
-```composer create-project --prefer-dist bkstar123/bkscms <your-project>```  
 
 ### 3.1 MenuHelper
 
