@@ -17,6 +17,9 @@ Currently, this package provides two helpers which can be used in a **BKSCMS** p
 - MenuHelper  
 - CrudViewHelper  
 
+For create a **BKSCMS** project, run the following command:  
+```composer create-project --prefer-dist bkstar123/bkscms <your-project>```  
+
 ### 3.1 MenuHelper
 
 After publishing the package's configuration file, you will get ***config/bkstar123_bkscms_sidebarmenu.php*** where you can a nested array which will then be converted to the content of the CMS side bar menu.  
