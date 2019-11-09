@@ -2,7 +2,7 @@
 
 > Provides neccessary utilities for a **BKSCMS** project  
 
-For create a **BKSCMS** project, run the following command:  
+For creating a **BKSCMS** project, run the following command:  
 ```composer create-project --prefer-dist bkstar123/bkscms <your-project>```  
 
 ## 1. Requirement
