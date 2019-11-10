@@ -24,5 +24,12 @@
         "psr-4": {
             "Bkstar123\\BksCMS\\Utilities\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bkstar123\\BksCMS\\Utilities\\Providers\\UtilitiesServiceProvider"
+            ]
+        }
     }
 }
